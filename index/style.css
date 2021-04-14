@@ -2,3 +2,41 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 35vw;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+header figure {
+  width: 100%;
+}
+
+header figure img {
+  max-width: 50%;
+  margin: 7.5% 12%;
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: block;
+}
