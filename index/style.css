@@ -26,15 +26,32 @@ header figure img {
 }
 
 header nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+
+}
+
+header nav #burger_menu {
+  margin: 7.5% 72%;
+  font-size: 90px;
+  outline: none;
+  background-color: rgba(255,255,255,0);
+  border: none;
+}
+
+header nav #burger_menu:focus {
+  color: #185ABC;
+}
+
+header nav #burger_menu i:focus {
+  outline: 0;
+  border: 0;
 }
 
 header nav ul {
   list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 header nav ul li {
