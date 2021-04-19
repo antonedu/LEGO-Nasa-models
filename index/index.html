@@ -15,15 +15,20 @@
       <img src="../assets/1024_LEGO_logo.png" alt="">
     </figure>
     <nav>
-      <button id="burger_menu">
+      <button id="burger_menu" onclick="toggleMenu()">
         <i tabindex="-1" class="fas fa-ellipsis-v"></i>
       </button>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Space Shuttle</a></li>
-        <li><a href="#">Lunar Lander</a></li>
-        <li><a href="#">Saturn V</a></li>
-      </ul>
+      <div id="navigation-links">
+        <button onclick="toggleMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Space Shuttle</a></li>
+          <li><a href="#">Lunar Lander</a></li>
+          <li><a href="#">Saturn V</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <section>
@@ -36,5 +41,6 @@
   <footer>
     &#169;2021 Anton Nilsson
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
