@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/65eb2d1c88.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" href="../assets/1024_LEGO_logo.png"/>
+  <link rel="icon" type="image/png" href="../assets/1024_LEGO_logo.png" />
   <title>LEGO x NASA</title>
 </head>
+
 <body>
-  <header>
-    <figure id="logo">
-      <img src="../assets/1024_LEGO_logo.png" alt="">
-    </figure>
-    <nav>
-      <button id="burger_menu" onclick="toggleMenu()">
-        <i tabindex="-1" class="fas fa-ellipsis-v"></i>
-      </button>
-      <div id="navigation-links">
-        <button onclick="toggleMenu()">
-          <i class="fas fa-times"></i>
+  <div id="wrapper">
+    <header>
+      <figure id="logo">
+        <img src="../assets/1024_LEGO_logo.png" alt="">
+      </figure>
+      <nav>
+        <button id="burger_menu" onclick="toggleMenu()">
+          <i tabindex="-1" class="fas fa-ellipsis-v"></i>
         </button>
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Space Shuttle</a></li>
-          <li><a href="#">Lunar Lander</a></li>
-          <li><a href="#">Saturn V</a></li>
-        </ul>
+        <div id="navigation-links" class="noshow">
+          <button onclick="toggleMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Space Shuttle</a></li>
+            <li><a href="#">Lunar Lander</a></li>
+            <li><a href="#">Saturn V</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="image-slider">
+        <figure><img src="../assets/10283.png" alt="NASA Space Shuttle Discovery | 10283"></figure>
+        <figure><img src="../assets/10266.png" alt="NASA Apollo 11 Lunar Lander | 10266"></figure>
+        <figure><img src="../assets/92176.png" alt="NASA Apollo Saturn V | 92176"></figure>
       </div>
-    </nav>
-  </header>
-  <section>
-    <div class="image-slider">
-      <figure><img src="../assets/10283.png" alt="NASA Space Shuttle Discovery | 10283"></figure>
-      <figure><img src="../assets/10266.png" alt="NASA Apollo 11 Lunar Lander | 10266"></figure>
-      <figure><img src="../assets/92176.png" alt="NASA Apollo Saturn V | 92176"></figure>
-    </div>
-  </section>
-  <footer>
-    &#169;2021 Anton Nilsson
-  </footer>
-  <script src="script.js"></script>
+    </section>
+    <footer>
+      &#169;2021 Anton Nilsson
+    </footer>
+    <script src="script.js"></script>
+  </div>
 </body>
+
 </html>

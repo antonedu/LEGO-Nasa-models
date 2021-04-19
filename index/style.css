@@ -3,6 +3,11 @@ body {
   padding: 0;
 }
 
+#wrapper {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 .noshow {
   display: none;
 }
@@ -40,8 +45,8 @@ header nav {
 }
 
 header nav #burger_menu {
-  margin: 7.5% 72%;
-  font-size: 90px;
+  margin: 7.5% 80%;
+  font-size: 30px;
 }
 
 header nav #burger_menu:focus {
@@ -54,7 +59,7 @@ header nav #burger_menu i:focus {
 }
 
 header nav #navigation-links {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -66,6 +71,7 @@ header nav #navigation-links {
 
 header nav ul {
   list-style-type: none;
+  margin-top: 15.3vh;
   /* backdrop-filter: blur(10px); */
 }
 
@@ -98,7 +104,29 @@ header nav ul li .active:hover {
 
 header nav #navigation-links i {
   color: #fff;
-  font-size: 90px;
+  font-size: 45px;
   margin: 1vh;
   padding: 0;
+}
+
+section {
+  width: 100vw;
+}
+
+section .image-slider {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+section .image-slider figure {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section .image-slider figure img {
+  max-width: 100%;
 }
