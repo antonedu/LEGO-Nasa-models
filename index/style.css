@@ -130,3 +130,14 @@ section .image-slider figure {
 section .image-slider figure img {
   max-width: 100%;
 }
+
+.front {
+  opacity: 100;
+}
+.back {
+  opacity: 0;
+}
+
+.front, .back {
+  transition: opacity 1s;
+}
