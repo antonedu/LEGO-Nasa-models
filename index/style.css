@@ -74,7 +74,8 @@ header nav #navigation-links {
 
 header nav ul {
   list-style-type: none;
-  margin-top: 15.3vh;
+  margin: 15.3vh 0 0;
+  padding: 0;
   /* backdrop-filter: blur(10px); */
 }
 
@@ -176,6 +177,10 @@ footer {
   padding: 0;
   height: 10vh;
   width: 100%;
+  text-align: center;
+  line-height: 10vh;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
   background-color: #272933;
   transition: bottom 0.4s;
 }
