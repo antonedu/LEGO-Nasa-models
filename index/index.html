@@ -20,11 +20,11 @@
         <img src="../assets/1024_LEGO_logo.png" alt="">
       </figure>
       <nav>
-        <button id="burger_menu" onclick="toggleMenu()">
+        <button id="burger_menu" onclick="toggleMenu(); disableScroll();">
           <i tabindex="-1" class="fas fa-ellipsis-v"></i>
         </button>
         <div id="navigation-links" class="noshow">
-          <button onclick="toggleMenu()">
+          <button onclick="toggleMenu(); enableScroll();">
             <i class="fas fa-times"></i>
           </button>
           <ul>
