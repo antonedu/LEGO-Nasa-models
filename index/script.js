@@ -1,4 +1,20 @@
-var arrayOfShuffleImages = ["../assets/10283.png", "../assets/10266.png", "../assets/92176.png"];
+var arrayOfShuffleImages = [
+  {
+    imagesrc: "../assets/10283.png",
+    set: "10283",
+    name: "NASA Space Shuttle Discovery"
+  },
+  {
+    imagesrc: "../assets/10266.png",
+    set: "10266",
+    name: "NASA Apollo 11 Lunar Lander"
+  },
+  {
+    imagesrc: "../assets/92176.png",
+    set: "92176",
+    name: "NASA Apollo Saturn V"
+  }
+];
 var currentImage = 0;
 
 function toggleMenu() {
@@ -22,7 +38,9 @@ function shuffleImages(sub) {
       --currentImage;
     }
   }
-  document.getElementsByClassName("back")[0].childNodes[0].src = arrayOfShuffleImages[currentImage];
+  document.getElementsByClassName("back")[0].childNodes[0].src = arrayOfShuffleImages[currentImage].imagesrc;
+  document.querySelector(".text > h1").innerHTML = arrayOfShuffleImages[currentImage].set;
+  document.querySelector(".text > h2").innerHTML = arrayOfShuffleImages[currentImage].name;
   header_front.classList.toggle("front");
   header_front.classList.toggle("back");
   header_back.classList.toggle("front");
