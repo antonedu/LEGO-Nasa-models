@@ -47,7 +47,9 @@ function shuffleImages(sub) {
   header_back.classList.toggle("back");
 }
 
-var id = setInterval(shuffleImages, 8000);
+if (screen.width < 768) {
+  var id = setInterval(shuffleImages, 8000);
+}
 
 function imageShuffleAdd () {
   clearInterval(id);
