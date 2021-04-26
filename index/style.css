@@ -144,6 +144,10 @@ section .image-slider figure img {
   transition: opacity 1s;
 }
 
+.saturn {
+  display: none;
+}
+
 section .image-slider .text {
   text-align: center;
   position: absolute;
@@ -195,7 +199,6 @@ footer.hide {
     margin: 0;
     padding: 0;
     grid-template-columns: 1fr 2fr;
-    background-color: red;
   }
 
   header figure {
@@ -222,7 +225,7 @@ footer.hide {
 
   header nav ul {
     list-style-type: none;
-    height: 100%;
+    height: 15vh;
     margin-top: 0;
     margin: 0;
     padding: 0;
@@ -232,8 +235,8 @@ footer.hide {
     display: inline-block;
     text-align: center;
     height: 100%;
-    width: 24%;
-    line-height: 100%;
+    width: 24.5%;
+    line-height: 15vh;
     margin: 0;
     padding: 0;
   }
@@ -248,7 +251,7 @@ footer.hide {
     padding: 0;
   }
 
-  header nav #navigation-links i {
+  header nav #navigation-links button {
     display: none;
   }
 
