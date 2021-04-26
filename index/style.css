@@ -229,7 +229,7 @@ footer.hide {
   header nav ul {
     list-style-type: none;
     height: 15vh;
-    width: 70%;
+    width: 100%;
     margin-top: 0;
     margin: 0 0 0 auto;
     padding: 0;
@@ -249,7 +249,7 @@ footer.hide {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #fff;
     text-decoration: none;
-    font-size: 3vh;
+    font-size: 2.4vh;
     font-weight: bold;
     margin: 0;
     padding: 0;
