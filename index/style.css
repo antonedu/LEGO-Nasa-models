@@ -59,13 +59,19 @@ header nav #burger_menu i:focus {
 header nav #navigation-links {
   position: fixed;
   z-index: 3;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
   background-color: rgba(60,60,60,0.7);
+}
+
+header nav #navigation-links button {
+  position: absolute;
+  top: 2.8vh;
+  right: 1.6vh;
 }
 
 header nav ul {
@@ -119,7 +125,7 @@ section .image-slider {
   position: relative;
 }
 
-section .image-slider figure {
+section .image-slider figure.front, section .image-slider figure.back {
   width: 100%;
   position: absolute;
   top: 0;
@@ -144,7 +150,7 @@ section .image-slider figure img {
   transition: opacity 1s;
 }
 
-.saturn {
+#saturn {
   display: none;
 }
 
@@ -199,7 +205,6 @@ footer.hide {
     margin: 0;
     padding: 0;
     grid-template-columns: 15vh 3fr;
-    grid-column-gap: 2fr;
   }
 
   header figure {
@@ -214,49 +219,9 @@ footer.hide {
   }
 
   header nav #burger_menu {
-    display: none;
-  }
-
-  header nav #navigation-links {
-    position: static;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-  }
-
-  header nav ul {
-    list-style-type: none;
-    height: 15vh;
-    width: 100%;
-    margin-top: 0;
-    margin: 0 0 0 auto;
-    padding: 0;
-  }
-
-  header nav ul li {
-    display: inline-block;
-    text-align: center;
-    height: 100%;
-    width: 24.5%;
-    line-height: 15vh;
-    margin: 0;
-    padding: 0;
-  }
-
-  header nav ul li a {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 5% 0% 7.5% 90%;
+    font-size: 30px;
     color: #fff;
-    text-decoration: none;
-    font-size: 2.4vh;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-  }
-
-  header nav #navigation-links button {
-    display: none;
   }
 
   section {
@@ -267,18 +232,14 @@ footer.hide {
     width: 80%;
     height: 80vh;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
   }
 
   section .image-slider figure {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   section .image-slider figure img {
-    max-width: 100%;
     display: block;
     margin: 0;
     padding: 0;
@@ -288,20 +249,61 @@ footer.hide {
     opacity: 1;
   }
   .back {
-    opacity: 0;
+    opacity: 1;
   }
 
   .front, .back {
     transition: opacity 1s;
   }
 
-  section .image-slider .text {
-    text-align: center;
+  section .image-slider #discovery {
+    left: 0;
+    top:-20vh;
+    left: -5vw;
+    transition: none;
+  }
+
+  section .image-slider #discovery img {
+    max-width: 544px;
+  }
+
+  #saturn {
+    display: block;
+  }
+
+  section .image-slider #lander {
+    /* position: absolute; */
+    top:auto;
+    bottom: 0vh;
+    left: -5vw;
+    transition: none;
+  }
+
+  section .image-slider #lander img {
+    max-width: 272px;
+  }
+
+  section .image-slider #saturn {
     position: absolute;
-    top: 80vw;
-    width: 100%;
-    margin: auto;
-    padding: 0;
+    width: 605px;
+    top:0;
+    /* left: auto; */
+    right: -25%;
+    transition: none;
+    transform: rotate(-5deg);
+  }
+
+  section .image-slider #saturn img {
+    max-height: 100%;
+  }
+
+  section .image-slider .text {
+    top: auto;
+    bottom: 20vh;
+    left: 20vw;
+    min-width: ;
+    max-width: 40%;
+    color: #fff;
   }
 
   section .image-slider .text h1 {
@@ -312,27 +314,6 @@ footer.hide {
   section .image-slider .text h2 {
     font-family: 'Open Sans', sans-serif;
     margin-top: -5vh;
-    border-top: 2px solid black;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0vh;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    height: 10vh;
-    width: 100%;
-    text-align: center;
-    line-height: 10vh;
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    background-color: #272933;
-    transition: bottom 0.4s;
-  }
-
-  footer.hide {
-    bottom: -10vh;
-    left: 0;
+    border-top: 2px solid #fff;
   }
 }
