@@ -260,11 +260,12 @@ footer.hide {
     left: 0;
     top:-20vh;
     left: -5vw;
+    width: 544px;
     transition: none;
   }
 
   section .image-slider #discovery img {
-    max-width: 544px;
+    max-width: 100%;
   }
 
   #saturn {
@@ -276,11 +277,12 @@ footer.hide {
     top:auto;
     bottom: 0vh;
     left: -5vw;
+    width: 272px;
     transition: none;
   }
 
   section .image-slider #lander img {
-    max-width: 272px;
+    max-width: 100%;
   }
 
   section .image-slider #saturn {
@@ -288,7 +290,7 @@ footer.hide {
     width: 605px;
     top:0;
     /* left: auto; */
-    right: -25%;
+    right: -25vw;
     transition: none;
     transform: rotate(-5deg);
   }
