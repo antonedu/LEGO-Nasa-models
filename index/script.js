@@ -52,7 +52,7 @@ if (screen.width < 768) {
 }
 
 if (screen.width > 767) {
-  document.getElementById("navigation-links").classList.remove("noshow");
+  // document.getElementById("navigation-links").classList.remove("noshow");
 }
 
 function imageShuffleAdd () {
