@@ -51,8 +51,8 @@ if (screen.width < 768) {
   var id = setInterval(shuffleImages, 8000);
 }
 
-if (screen.width > 767) {
-  // document.getElementById("navigation-links").classList.remove("noshow");
+if (screen.width > 1023) {
+  document.getElementById("navigation-links").classList.remove("noshow");
 }
 
 function imageShuffleAdd () {
