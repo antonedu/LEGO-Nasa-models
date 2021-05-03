@@ -345,8 +345,14 @@ footer.hide {
 } */
 
 @media (min-width: 800px) {
+  header {
+    position: relative;
+    z-index: 5;
+  }
+
   header nav #burger_menu {
     display: none;
+
   }
 
   header nav #navigation-links {
