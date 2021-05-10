@@ -116,6 +116,38 @@ header nav #navigation-links i {
 
 section {
   width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 55% 45%;
+}
+
+section figure {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section figure img {
+  margin: -5% 2.5%;
+  max-width: 120%;
+  max-height: 120%;
+}
+
+section article {
+  margin: 0 7.5%;
+  padding: 0;
+  width: 85%;
+  height: 100%;
+}
+
+section article h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+section article p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 footer {
