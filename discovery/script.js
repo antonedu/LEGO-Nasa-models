@@ -45,13 +45,13 @@ function shuffleImages(sub) {
   header_back.classList.toggle("back");
 }
 
-if (screen.width < 768) {
+/*if (screen.width < 768) {
   var id = setInterval(shuffleImages, 8000);
 }
 
 if (screen.width > 1023) {
   document.getElementById("navigation-links").classList.remove("noshow");
-}
+}*/
 
 function imageShuffleAdd() {
   clearInterval(id);
