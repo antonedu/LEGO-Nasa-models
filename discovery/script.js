@@ -51,8 +51,6 @@ if (screen.width < 768) {
 
 if (screen.width > 1023) {
   document.getElementById("navigation-links").classList.remove("noshow");
-  document.querySelector(".text > h1").innerHTML = "LEGO x NASA";
-  document.querySelector(".text > h2").innerHTML = "All NASA LEGO sets";
 }
 
 function imageShuffleAdd() {
