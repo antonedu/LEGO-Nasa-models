@@ -175,6 +175,10 @@ section .image-slider .text h2 {
   border-top: 2px solid black;
 }
 
+section .image-slider .text button {
+  font-size: 4vh;
+}
+
 footer {
   position: absolute;
   bottom: 0vh;
