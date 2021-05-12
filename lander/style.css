@@ -289,7 +289,9 @@ footer.hide {
     font-size: 2vh;
     font-weight: bold;
   }
+}
 
+@media (min-width: 1200px) {
   section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
