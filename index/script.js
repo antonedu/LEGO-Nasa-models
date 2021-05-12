@@ -47,15 +47,22 @@ function shuffleImages(sub) {
   header_back.classList.toggle("back");
 }
 
-if (screen.width < 768) {
-  var id = setInterval(shuffleImages, 8000);
+function addRemoveElements() {
+  if (screen.width < 767) {
+    var id = setInterval(shuffleImages, 8000);
+    document.getElementById("navigation-links").classList.add("noshow");
+  } 
+
+  if (screen.width > 1023) {
+    document.getElementById("navigation-links").classList.remove("noshow");
+    document.querySelector(".text > h1").innerHTML = "LEGO x NASA";
+    document.querySelector(".text > h2").innerHTML = "All NASA LEGO sets";
+  } else {
+    document.getElementById("navigation-links").classList.add("noshow");
+  }
 }
 
-if (screen.width > 1023) {
-  document.getElementById("navigation-links").classList.remove("noshow");
-  document.querySelector(".text > h1").innerHTML = "LEGO x NASA";
-  document.querySelector(".text > h2").innerHTML = "All NASA LEGO sets";
-}
+addRemoveElements();
 
 function imageShuffleAdd() {
   clearInterval(id);
@@ -73,6 +80,10 @@ function toggleFooter() {
   let element = document.getElementsByTagName("footer")[0];
   element.classList.toggle("hide");
 }
+
+window.addEventListener('resize', () => {
+  addRemoveElements();
+})
 
 window.addEventListener('mousewheel', function(e) {
   let element = document.getElementsByTagName("footer")[0];
