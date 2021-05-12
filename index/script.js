@@ -14,6 +14,7 @@ var arrayOfShuffleImages = [{
     name: "NASA Apollo Saturn V"
   }
 ];
+var id;
 var currentImage = 0;
 
 function toggleMenu() {
@@ -49,9 +50,9 @@ function shuffleImages(sub) {
 
 function addRemoveElements() {
   if (screen.width < 767) {
-    var id = setInterval(shuffleImages, 8000);
+    id = setInterval(shuffleImages, 8000);
     document.getElementById("navigation-links").classList.add("noshow");
-  } 
+  }
 
   if (screen.width > 1023) {
     document.getElementById("navigation-links").classList.remove("noshow");
