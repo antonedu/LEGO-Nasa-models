@@ -1,15 +1,15 @@
 var arrayOfShuffleImages = [{
-    imagesrc: "../assets/10283.png",
+    imagesrc: "assets/10283.png",
     set: "10283",
     name: "NASA Space Shuttle Discovery"
   },
   {
-    imagesrc: "../assets/10266.png",
+    imagesrc: "assets/10266.png",
     set: "10266",
     name: "NASA Apollo 11 Lunar Lander"
   },
   {
-    imagesrc: "../assets/92176.png",
+    imagesrc: "assets/92176.png",
     set: "92176",
     name: "NASA Apollo Saturn V"
   }
