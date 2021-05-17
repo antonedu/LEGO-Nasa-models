@@ -1,7 +1,9 @@
+// Funktion för att öppna och stänga naviagtion
 function toggleMenu() {
   document.getElementById("navigation-links").classList.toggle("noshow");
 }
 
+// Funktion för att ta bort och lägga till effekter som endast används i vissa breakpoints
 function addOrRemoveElements() {
   if (screen.width < 768) {
     document.getElementById("navigation-links").classList.add("noshow");
@@ -12,17 +14,21 @@ function addOrRemoveElements() {
   }
 }
 
+// Kallar på funktionen för att det ska fungera korrekt vid första laddning av sidan
 addOrRemoveElements();
 
+// Då fönstret ändrar storlek kollar det om den ska köra addOrRemoveElements() igen
 window.addEventListener('resize', () => {
   addOrRemoveElements();
 })
 
+// Funktion som visar eller tar bort footer beroende på om den redan syns eller ej.
 function toggleFooter() {
   let element = document.getElementsByTagName("footer")[0];
   element.classList.toggle("hide");
 }
 
+// EventHandler som visar footer vid scroll.
 window.addEventListener('mousewheel', function(e) {
   let element = document.getElementsByTagName("footer")[0];
   let wDelta = e.wheelDelta < 0 ? 'down' : 'up';
@@ -32,6 +38,9 @@ window.addEventListener('mousewheel', function(e) {
     element.classList.add("hide");
   }
 });
+
+/* Varning följande är INTE min egna kod den är tagen från StackedOverflow
+och den stänger av scrollning då navigationen är öppen */
 
 // disable scroll when nav is Open
 var keys = {
