@@ -39,7 +39,7 @@ window.addEventListener('mousewheel', function(e) {
   }
 });
 
-/* Varning följande är INTE min egna kod den är tagen från StackedOverflow
+/* OBS följande är INTE min egna kod den är tagen från StackedOverflow
 och den stänger av scrollning då navigationen är öppen */
 
 // disable scroll when nav is Open

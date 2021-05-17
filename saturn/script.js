@@ -33,6 +33,9 @@ window.addEventListener('mousewheel', function(e) {
   }
 });
 
+/* OBS följande är INTE min egna kod den är tagen från StackedOverflow
+och den stänger av scrollning då navigationen är öppen */
+
 // disable scroll when nav is Open
 var keys = {
   37: 1,

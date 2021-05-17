@@ -1,3 +1,4 @@
+// Array med information som används i bildspel
 var arrayOfShuffleImages = [{
     imagesrc: "../assets/10283.png",
     set: "10283",
@@ -17,10 +18,12 @@ var arrayOfShuffleImages = [{
 var id;
 var currentImage = 0;
 
+// Funktion för att visa navigation
 function toggleMenu() {
   document.getElementById("navigation-links").classList.toggle("noshow");
 }
 
+// Bildspels funktioner
 function shuffleImages(sub) {
   let header_front = document.getElementsByClassName('front')[0];
   let header_back = document.getElementsByClassName('back')[0];
@@ -48,6 +51,7 @@ function shuffleImages(sub) {
   header_back.classList.toggle("back");
 }
 
+// Funktion för att visa och ta bort element i visa breakpoints
 function addRemoveElements() {
   if (screen.width < 767) {
     id = setInterval(shuffleImages, 8000);
@@ -62,9 +66,9 @@ function addRemoveElements() {
     document.getElementById("navigation-links").classList.add("noshow");
   }
 }
-
+// Kallar efter ovan funktion vid laddning av sidan
 addRemoveElements();
-
+// Funktioner som fixar setInterval igen om användaren själv byter bild
 function imageShuffleAdd() {
   clearInterval(id);
   shuffleImages(false);
@@ -76,16 +80,17 @@ function imageShuffleSub() {
   shuffleImages(true);
   id = setInterval(shuffleImages, 8000);
 }
-
+// funktion för att toggla footer
 function toggleFooter() {
   let element = document.getElementsByTagName("footer")[0];
   element.classList.toggle("hide");
 }
-
+// tar bort och lägger till element om fönstret ändrar storlek
 window.addEventListener('resize', () => {
   addRemoveElements();
 })
 
+// EventHandler för att visa footer vid scroll
 window.addEventListener('mousewheel', function(e) {
   let element = document.getElementsByTagName("footer")[0];
   let wDelta = e.wheelDelta < 0 ? 'down' : 'up';
@@ -95,6 +100,9 @@ window.addEventListener('mousewheel', function(e) {
     element.classList.add("hide");
   }
 });
+
+/* OBS följande är INTE min egna kod den är tagen från StackedOverflow
+och den stänger av scrollning då navigationen är öppen */
 
 // disable scroll when nav is Open
 var keys = {
