@@ -38,9 +38,9 @@ function shuffleImages(sub) {
     }
   }
   document.getElementsByClassName("back")[0].childNodes[0].src = arrayOfShuffleImages[currentImage].imagesrc;
-  document.querySelector(".text > h1").innerHTML = '<button onclick="imageShuffleSub()"><i class="fas fa-less-than"></i></button>'
+  document.querySelector(".text > h1").innerHTML = '<button onclick="imageShuffleSub()"><i class="fas fa-caret-left"></i></button>'
                                                     + arrayOfShuffleImages[currentImage].set
-                                                    + '<button onclick="imageShuffleAdd()"><i class="fas fa-greater-than"></i></button>';
+                                                    + '<button onclick="imageShuffleAdd()"><i class="fas fa-caret-right"></i></button>';
   document.querySelector(".text > h2").innerHTML = arrayOfShuffleImages[currentImage].name;
   header_front.classList.toggle("front");
   header_front.classList.toggle("back");

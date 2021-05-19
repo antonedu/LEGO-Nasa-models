@@ -1,3 +1,4 @@
+/* CSS regler i minsta breakpointen */
 body {
   margin: 0;
   padding: 0;
@@ -14,12 +15,14 @@ body {
   display: none;
 }
 
+/* Standardstilering av knappar */
 button {
   outline: none;
   background-color: rgba(255,255,255,0);
   border: none;
 }
 
+/* Start på CSS regler för header (header includerar endast en logga och navbaren) */
 header {
   margin: 0;
   padding: 0;
@@ -28,6 +31,7 @@ header {
   height: 35vw;
 }
 
+/* CSS regler för loggan */
 figure {
   margin: 0;
   padding: 0;
@@ -42,11 +46,17 @@ header figure img {
   margin: 7.5% 12%;
 }
 
+/* CSS regler för navbaren */
+/*
+  #burger_menu är ID:et för knappen som visar navigationen för små breakpoints.
+  Den försvinner vid större breakpoints
+ */
 header nav #burger_menu {
   margin: 7.5% 0% 7.5% 80%;
   font-size: 30px;
 }
 
+/* CSS regler för hur knappen ska se ut då den är fokuserad */
 header nav #burger_menu:focus {
   color: #185ABC;
 }
@@ -56,6 +66,7 @@ header nav #burger_menu i:focus {
   border: 0;
 }
 
+/* Start på CSS regler för navigationen */
 header nav #navigation-links {
   position: fixed;
   z-index: 3;
@@ -113,11 +124,14 @@ header nav #navigation-links i {
   margin: 1vh;
   padding: 0;
 }
+/* Slut på CSS regler för header */
 
+/* Start för CSS regler till section (som innehåller det huvudsakliga innehållet) */
 section {
   width: 100%;
 }
 
+/* CSS regler för bildspel */
 section .image-slider {
   width: 80%;
   height: 80vh;
@@ -154,7 +168,7 @@ section .image-slider figure img {
 #saturn {
   display: none;
 }
-
+/* CSS regler för texten i section */
 section .image-slider .text {
   text-align: center;
   position: absolute;
@@ -176,9 +190,11 @@ section .image-slider .text h2 {
 }
 
 section .image-slider .text button {
-  font-size: 4vh;
+  font-size: 6vh;
 }
+/* Slut på CSS regler för section */
 
+/* Start på CSS regler för footer (innehåller endast ansvarig person) */
 footer {
   position: absolute;
   bottom: 0vh;
@@ -201,10 +217,12 @@ footer.hide {
 }
 
 @media (min-width: 768px) {
+  /* För större breakpoints ändras bakgrundfärgen till svart */
   #wrapper {
     background-color: #000;
   }
 
+  /* Header får en mindre logga på större breakpoints */
   header {
     height: 15vh;
     margin: 0;
@@ -222,18 +240,19 @@ footer.hide {
     margin: 20%;
     padding: 0;
   }
-
+  /* Knappen för att öppna navigation ändras till vitt för att den ska synnas mot den svarta bakgrunden */
   header nav #burger_menu {
     margin: 5% 0% 7.5% 90%;
     font-size: 30px;
     color: #fff;
   }
-
+  /* section blir fördelad på ett annat sätt */
   section {
     width: 100%;
     padding: 0;
   }
-
+  /* Vid större breakpoints positioneras bilderna
+  istället för att vara en del av bildspelet */
   section .image-slider {
     width: 100%;
     height: 80vh;
@@ -307,7 +326,7 @@ footer.hide {
     max-width: 100vw;
     max-height: 100vh;
   }
-
+  /* text storleken ökas för article och footer */
   section .image-slider .text {
     top: 0;
     left: 0;
@@ -334,6 +353,7 @@ footer.hide {
 }
 
 @media (min-width: 1024px) {
+  /* Header sätt till z-index 5 för att den ska ligga över bilderna som positioneras */
   header {
     position: relative;
     z-index: 5;
@@ -342,7 +362,7 @@ footer.hide {
   header nav #burger_menu {
     display: none;
   }
-
+  /* Knappen för att visa navigation tas bort då den visas hela tiden */
   header nav #navigation-links {
     position: static;
     z-index: 3;
@@ -384,6 +404,7 @@ footer.hide {
 }
 
 @media (min-width: 1366px) {
+  /*Vid större breakpoints ändras text storleken*/
   section .image-slider .text h1, section .image-slider .text h2 {
     width: 30%;
   }
