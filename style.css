@@ -216,6 +216,13 @@ footer.hide {
   left: 0;
 }
 
+footer p {
+  height: 10vh;
+  line-height: 10vh;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   /* För större breakpoints ändras bakgrundfärgen till svart */
   #wrapper {
